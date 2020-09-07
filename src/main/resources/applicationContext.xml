@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--	Bean Create-->
+
+<!--	&lt;!&ndash; load the properties file: sport.properties &ndash;&gt;-->
+<!--	<context:property-placeholder location="classpath:sport.properties"/>-->
+
+<!--	&lt;!&ndash; Define your beans here &ndash;&gt;-->
+
+<!--	&lt;!&ndash; define the dependency &ndash;&gt;-->
+<!--	<bean id="myFortuneService"-->
+<!--		  class="springdemo.service.impl.HappyFortuneService">-->
+<!--	</bean>-->
+
+<!--	<bean id="myCoach"-->
+<!--		  class="springdemo.service.impl.TennisCoach">-->
+
+<!--		&lt;!&ndash; set up constructor injection &ndash;&gt;-->
+<!--		<constructor-arg ref="myFortuneService" />-->
+<!--	</bean>-->
+
+<!--	<bean id="mySwimCoachServiceImpl"-->
+<!--		  class="SwimCoachService">-->
+
+<!--		&lt;!&ndash; set up setter injection &ndash;&gt;-->
+<!--		<property name="fortuneService" ref="myFortuneService" />-->
+
+<!--		&lt;!&ndash; inject literal values &ndash;&gt;-->
+<!--		<property name="emailAddress" value="${foo.email}" />-->
+<!--		<property name="team" value="${foo.team}" />-->
+
+<!--	</bean>-->
+
+<!--	End Bean Create-->
+
+	<!-- add entry to enable component scanning -->
+
+	<context:component-scan base-package="springdemo"/>
+
+</beans>
+
+
+
+
+
