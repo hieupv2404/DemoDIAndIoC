@@ -21,19 +21,19 @@ public class TennisCoach implements Coach {
 	// define a default constructor
 
 	public TennisCoach() {
-		System.out.println(">> TennisCoach: inside default constructor");
+		System.out.println(">> TennisCoach Bean: inside default constructor");
 	}
 
-	// define my init method
+	// define init method
 	@PostConstruct
 	public void doMyStartupStuff() {
-		System.out.println(">> TennisCoach: inside of doMyStartupStuff()");
+		System.out.println(">> TennisCoach Bean has been created before sout!");
 	}
 	
-	// define my destroy method
+	// define destroy method
 	@PreDestroy
 	public void doMyCleanupStuff() {
-		System.out.println(">> TennisCoach: inside of doMyCleanupStuff()");		
+		System.out.println(">> TennisCoach Bean will be destroyed after sout!");
 	}
 	
 	// define a setter method
@@ -53,7 +53,7 @@ public class TennisCoach implements Coach {
 	
 	@Override
 	public String getDailyWorkout() {
-		return "Practice your backhand volley";
+		return "Tennis Coach said: Let's train! ";
 	}
 
 	@Override
